@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment30</title>
+    <style>
+        .container{
+            border:2px solid black;
+            padding:15px;
+            width:500px;
+            margin:auto;
+            height:auto;
+            border-radius:10px;
+            margin-top:40px;
+        }
+        .image{
+            
+         display:block;
+         margin:auto;
+        }
+       .container-2{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+       }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center">Quantity Increment and Decrement</h2>
+    <div class="container">
+    <img src="mobile.png" alt="mobile png image" height="auto" width="150px" class="image">
+    <h3 style="text-align:center">Samsung Mobile</h3>
+
+    <div class="container-2">
+        <button type="button" onclick="decrement()">--</button>
+        <span id="quantity">1</span>
+        <button type="button" onclick="increment()">+</button>
+       
+    </div>
+</div>
+
+<script>
+    function increment(){
+        const quantityElement=document.getElementById('quantity');
+        const quantity=parseInt(quantityElement.innerText);
+        quantityElement.innerText=quantity+1;
+    }
+    function decrement(){
+        const quantityElement=document.getElementById('quantity');
+        const quantity=parseInt(quantityElement.innerText);
+        if(quantity>0){
+            quantityElement.innerText=quantity-1;
+
+        }
+        
+    }
+</script>
+</body>
+</html>
