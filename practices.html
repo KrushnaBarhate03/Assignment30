@@ -42,15 +42,15 @@
 
 <script>
     function increment(){
-        const quantityElement=document.getElementById('quantity');
-        const quantity=parseInt(quantityElement.innerText);
-        quantityElement.innerText=quantity+1;
+        const QtyElement=document.getElementById('quantity');
+        const quantity=parseInt(QtyElement.innerText);
+        QtyElement.innerText=quantity+1;
     }
     function decrement(){
-        const quantityElement=document.getElementById('quantity');
-        const quantity=parseInt(quantityElement.innerText);
+        const QtyElement=document.getElementById('quantity');
+        const quantity=parseInt(QtyElement.innerText);
         if(quantity>0){
-            quantityElement.innerText=quantity-1;
+            QtyElement.innerText=quantity-1;
 
         }
         
